@@ -1,16 +1,71 @@
-# React + Vite
+# 🔗 Label Setu
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+### AI-Assisted Legal Metrology Compliance Checker for Packaged Commodities
 
-Currently, two official plugins are available:
+> **Label Setu** is an AI-assisted compliance platform designed to help Legal Metrology enforcement officials analyze packaged commodity labels, identify mandatory declarations, detect potential violations, and generate explainable compliance assessments.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🏆 Smart India Hackathon
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Problem Domain:** Legal Metrology & Consumer Protection  
+**Solution:** AI-Assisted Packaged Commodity Label Compliance  
+**Application:** Enforcement & Inspection Support
 
-## Expanding the Oxlint configuration
+Label Setu aims to reduce the time and manual effort required to inspect packaged commodity labels while providing structured, evidence-based and explainable compliance results.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+## 💡 The Problem
+
+Legal Metrology enforcement officials need to verify whether packaged commodities display mandatory declarations such as:
+
+- Manufacturer / Packer / Importer details
+- Net quantity
+- Maximum Retail Price (MRP)
+- Date-related declarations
+- Consumer care information
+- Batch / Lot information
+- Readability and declaration requirements
+
+Manual inspection of these declarations can be time-consuming and prone to inconsistency, especially when processing a large number of products.
+
+---
+
+## 🚀 Our Solution
+
+**Label Setu** combines OCR, NLP, and a deterministic Legal Metrology rule engine to transform a product-label image into a structured compliance assessment.
+
+### 🔄 How it works
+
+```text
+       📷 Product Label Image
+                │
+                ▼
+        ┌─────────────────┐
+        │    EasyOCR      │
+        │ Text + BBoxes   │
+        │ + Confidence    │
+        └────────┬────────┘
+                 │
+                 ▼
+        ┌─────────────────┐
+        │ NLP & Extraction│
+        │ spaCy + Patterns │
+        └────────┬────────┘
+                 │
+                 ▼
+        ┌─────────────────┐
+        │ Legal Metrology │
+        │   Rule Engine   │
+        └────────┬────────┘
+                 │
+                 ▼
+        ┌─────────────────┐
+        │ Compliance      │
+        │ Assessment      │
+        └────────┬────────┘
+                 │
+        ┌────────┴─────────┐
+        ▼                  ▼
+   👮 Officer UI      🗄️ MongoDB Atlas
